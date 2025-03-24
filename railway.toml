@@ -4,10 +4,6 @@ buildCommand = "pnpm install && pnpm run build"
 
 [deploy]
 startCommand = "pnpm start"
-healthcheckPath = "/"
-healthcheckTimeout = 100
-restartPolicyType = "ON_FAILURE"
-numReplicas = 1
 
 [phases.setup]
 nixPkgs = ["nodejs", "pnpm"]
